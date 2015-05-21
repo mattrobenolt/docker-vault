@@ -1,6 +1,6 @@
 # Tags
 - [`0.1.2` (*Dockerfile)](https://github.com/novilabs/docker-vault/blob/master/Dockerfile)
-- [`0.1.2-consul`, `consul`, (*consul/Dockerfile)](https://github.com/novilabs/docker-vault/blob/master/consul/Makefile)
+- [`0.1.2-consul`, `consul`, (*consul/Dockerfile)](https://github.com/novilabs/docker-vault/blob/master/consul/Dockerfile)
 
 # What is Hashicorp's Vault?
 [Vault](https://vaultproject.io/) secures, stores, and tightly controls access to tokens, passwords, 
