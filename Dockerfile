@@ -1,7 +1,7 @@
 FROM alpine:3.1
 
-RUN apk --update add gnupg\
- && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C
+RUN apk --update add gnupg
+RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C
 
 ENV VAULT_VERSION 0.1.2
 RUN set -x\
