@@ -10,6 +10,7 @@ API to access multiple backends: HSMs, AWS IAM, SQL databases, raw key/value, an
 
 # Usage
 ## dev server
+
 ```
 docker run --rm -ti --cap-add IPC_LOCK novilabs/vault -dev
 ```
@@ -17,12 +18,14 @@ docker run --rm -ti --cap-add IPC_LOCK novilabs/vault -dev
 ## With consul backend
 ### start consul
 OSX
+
 ```
 $(docker run --rm progrium/consul cmd:run $(boot2docker ip) -it)
 ```
 
 ### run vault
 OSX
+
 ```
 docker run --rm -ti --cap-add IPC_LOCK\
  -p 8200:8200\
