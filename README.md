@@ -24,5 +24,5 @@ $(docker run --rm progrium/consul cmd:run $(boot2docker ip) -it)
 ### run vault
 OSX
 ```
-docker run --rm -ti -p 8200:8200 -e "CONSUL_HOST_ADDR=$(boot2docker ip) novilabs/vault:consul"
+docker run --rm -ti -p 8200:8200 --cap-add IPC_LOCK -e "CONSUL_HOST_ADDR=$(boot2docker ip):8500" novilabs/vault:consul
 ```
