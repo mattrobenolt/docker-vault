@@ -1,4 +1,4 @@
-FROM docker.novilabs.com:5443/vault:0.1.2
+FROM novilabs/vault:0.1.2
 
 # install bifurcate
 ENV BIFURCATE_VERSION 0.3.1
