@@ -20,7 +20,7 @@ docker run --rm -ti --cap-add IPC_LOCK novilabs/vault -dev
 OSX
 
 ```
-$(docker run --rm progrium/consul cmd:run $(boot2docker ip) -it)
+$(docker run --rm -e EXPECT=1 progrium/consul cmd:run $(boot2docker ip) -it)
 ```
 
 ### run vault
