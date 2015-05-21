@@ -9,18 +9,19 @@ leasing, key revocation, key rolling, and auditing. Vault presents a unified
 API to access multiple backends: HSMs, AWS IAM, SQL databases, raw key/value, and more.
 
 # Usage
+## dev server
 ```
 docker run --rm -ti --cap-add IPC_LOCK novilabs/vault -dev
 ```
 
-# With consul backend
-## start consul
+## With consul backend
+### start consul
 OSX
 ```
 $(docker run --rm progrium/consul cmd:run $(boot2docker ip) -it)
 ```
 
-## run vault
+### run vault
 OSX
 ```
 docker run --rm -ti -p 8200:8200 -e "CONSUL_HOST_ADDR=$(boot2docker ip) novilabs/vault:consul"
